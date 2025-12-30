@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Company Details</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Company Details</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1 id="companyName">Company</h1>
+<h1 id="companyName"></h1>
 
-<p>
-<strong>Work:</strong> Company-specific work details will be shown here.
-</p>
+<p><strong>Work:</strong> Company-specific work details will be shown here.</p>
+<p><strong>Criteria:</strong> Eligibility and required skills.</p>
 
-<p>
-<strong>Criteria:</strong> Eligibility and required skills.
-</p>
-
-<a id="applyBtn" href="inquiry.html" style="
+<a id="applyBtn" style="
 display:inline-block;
 padding:10px 16px;
 background:#007bff;
@@ -33,6 +28,12 @@ const company = params.get("company");
 
 if (company) {
   document.getElementById("companyName").innerText = company;
+
+  // 🔴 CHANGE THIS to your real entry ID
+  const entryId = "entry.123456789";
+
+  document.getElementById("applyBtn").href =
+    "inquiry.html?" + entryId + "=" + encodeURIComponent(company);
 }
 </script>
 
