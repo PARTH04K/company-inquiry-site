@@ -11,23 +11,14 @@
 <p>Please fill the form below. It is 100% free.</p>
 
 <iframe
-  id="formFrame"
+  src="https://docs.google.com/forms/d/e/1FAIpQLScE1XPWJXkk4HY4W1vnWDb02tOC0xG9Rbg93rtegm33iCKorw/viewform?embedded=true"
   width="100%"
   height="900"
-  frameborder="0">
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0">
+  Loading…
 </iframe>
-
-<script>
-const params = window.location.search;
-
-// ✅ ONLY THE BASE URL (NO <iframe>, NO embedded=true here)
-const baseFormUrl =
-"https://docs.google.com/forms/d/e/1FAIpQLScE1XPWJXkk4HY4W1vnWDb02tOC0xG9Rbg93rtegm33iCKorw/viewform";
-
-// ✅ Build final iframe URL correctly
-document.getElementById("formFrame").src =
-  baseFormUrl + params + "&embedded=true";
-</script>
 
 </body>
 </html>
