@@ -20,9 +20,9 @@
 <script>
 const params = window.location.search;
 
-// ✅ CORRECT base Google Form URL (IMPORTANT)
+// 🔴 MUST BE /d/e/ URL
 const baseFormUrl =
-"https://docs.google.com/forms/d/1mJxOt9p6GDH1pjah9zA-cGLpyPP_WMSHFbxXfldZTY/viewform";
+"<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScE1XPWJXkk4HY4W1vnWDb02tOC0xG9Rbg93rtegm33iCKorw/viewform?embedded=true" width="100" height="912" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>";
 
 document.getElementById("formFrame").src =
   baseFormUrl + params + "&embedded=true";
