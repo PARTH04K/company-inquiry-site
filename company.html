@@ -29,8 +29,8 @@ const company = params.get("company");
 if (company) {
   document.getElementById("companyName").innerText = company;
 
-  // 🔴 CHANGE THIS to your real entry ID
-  const entryId = "entry.123456789";
+  // 🔴 PUT YOUR REAL ENTRY ID HERE
+  const entryId = "entry.987654321";
 
   document.getElementById("applyBtn").href =
     "inquiry.html?" + entryId + "=" + encodeURIComponent(company);
